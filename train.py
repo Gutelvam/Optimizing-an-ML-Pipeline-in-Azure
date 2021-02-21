@@ -48,7 +48,7 @@ def clean_data(data):
 x, y = clean_data(ds)
 
 ## information from docummentation: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
-x_train, x_test, y_train, y_test = train_test_split(x , y , test_size = .25, random_state= 0)
+x_train, x_test, y_train, y_test = train_test_split(x , y , test_size = .30, random_state= 0)
 run = Run.get_context()
 
   
