@@ -80,7 +80,7 @@ For the **primary_metric** i have used the accuracy since is the metric chosen t
 
 ## Pipeline comparison <a name="PipelineComparison"></a>
 
-For the two pipilines presented above with HyperDrive and AutoML. The second one performed slightly better but the gain is almost inrelevant between two result metrics, HyperDrive got  accuracy of 0.9146 and AutoML 0.9156. Thus The HyperDrive model  would be a better Choice since it took almost half of time comparing with AutoML to run. Otherwise AutoML reached a very accurated result with low effort of explicit programing. The table below presents both model details.
+For the two pipilines presented above with HyperDrive and AutoML. The second one performed slightly better but the gain is almost inrelevant between two result metrics, HyperDrive got  accuracy of 0.9146 and AutoML 0.9156. Thus The HyperDrive model  would be a better Choice since it took less than half time (aprox. 13 mins) comparing with AutoML to run(aprox. 39 mins). Otherwise AutoML reached a very accurated result with low effort of explicit programing. The table below presents both model details.
 
 | METHOD  | ALGORITHIM | EXPERIMENT ID  | ACCURACY|
 | ------------- | ------------- | ------------- | ------------- |
@@ -131,3 +131,11 @@ Thanks for Udacity for give the oportunity to work with this data.
 11. https://docs.microsoft.com/en-us/azure/machine-learning/how-to-auto-train-remote
 
 13. https://machinelearningmastery.com/what-is-imbalanced-classification/
+
+13. https://www.mdeditor.tw/pl/pZLC
+
+14. https://towardsdatascience.com/azure-machine-learning-service-train-a-model-df72c6b5dc
+
+15. https://www.bluegranite.com/blog/train-and-deploy-machine-learning-models-using-the-azureml-service
+
+16. https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/tutorial-train-models-with-aml.md
