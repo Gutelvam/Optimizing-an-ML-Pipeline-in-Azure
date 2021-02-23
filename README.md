@@ -17,7 +17,7 @@ Below you can see a flow design of all tasks:
 
 ## Summary
 
-The Dataset contains data about Banking-Marketing of a Portuguese banking institution, and the main goal was to predict whenever a customer will respond or not (column y) an marketing campaigns (phone calls). For this case the best performing model was  **VotingEnsemble** provided from **AutoML method** with Accuracy of : 0.9156 that was higher than Hyperdrive (0.9146) and simple logistic Regression(0.9150).
+The Dataset contains data about Banking-Marketing of a Portuguese banking institution, and the main goal was to predict whenever a customer will respond or not (column y) an marketing campaigns (phone calls). For this case the best performing model was  **VotingEnsemble** provided from **AutoML method** with Accuracy of : 0.9159 that was higher than Hyperdrive (0.9146) and simple logistic Regression(0.9150).
 
 # Index
 
@@ -80,13 +80,13 @@ For the **primary_metric** i have used the accuracy since is the metric chosen t
 
 ## Pipeline comparison <a name="PipelineComparison"></a>
 
-For the two pipilines presented above with HyperDrive and AutoML. The second one performed slightly better but the gain is almost inrelevant between two result metrics, HyperDrive got  accuracy of 0.9146 and AutoML 0.9156. Thus The HyperDrive model  would be a better Choice since it took less than half time (aprox. 13 mins) comparing with AutoML to run(aprox. 39 mins). Otherwise AutoML reached a very accurated result with low effort of explicit programing. The table below presents both model details.
+For the two pipilines presented above with HyperDrive and AutoML. The second one performed slightly better but the gain is almost inrelevant between two result metrics, HyperDrive got  accuracy of 0.9146 and AutoML 0.9159. Thus The HyperDrive model  would be a better Choice since it took less than half time (aprox. 13 mins) comparing with AutoML to run(aprox. 39 mins). Otherwise AutoML reached a very accurated result with low effort of explicit programing. The table below presents both model details.
 
 | METHOD  | ALGORITHIM | EXPERIMENT ID  | ACCURACY|
 | ------------- | ------------- | ------------- | ------------- |
 | Sklearn | Logistic Regression  |  | 0.9150 |
 | HyperDrive | Logistic Regression  | HD_6e67214b-d7cb-4f3a-afc0-11a9445d5d17 | 0.9146 |
-| AutoML  | VotingEnsemble | AutoML_ac058689-383f-4349-a9a8-d1ad303ce880_25 | 0.9156 |
+| AutoML  | VotingEnsemble | AutoML_ac058689-383f-4349-a9a8-d1ad303ce880_25 | 0.9159 |
 
 The difference of accuracy between  those models can be caused by the parameters space chosen for hyperparemeter tunning doens't contemplate the best result, thus using Gridsearch would be a good try to improve HyperDrive. In AutoML the Ensemble model is more powerful than  simple Logistic-Regression, this is another factor that could cause this difference.
 
